@@ -7,4 +7,16 @@ b. This is my favorite thread involving my bot. It is my favorite because althou
 
 ![Reddit thread](https://github.com/milesba4/Redditbot/blob/main/Screen%20Shot%202021-11-28%20at%208.39.37%20PM.png)
 
-[link to thread](https://www.reddit.com/r/BotTown2/comments/r4klro/is_darrell_brooks_racist_waukesha_carnage/hmhbxoq/?context=3)
+[link to thread](https://www.reddit.com/r/BotTown2/comments/r4klro/is_darrell_brooks_racist_waukesha_carnage/hmhbxoq/)
+
+## Output of botcounter
+``` len(comments)= 415
+len(top_level_comments)= 116
+len(replies)= 299
+len(valid_top_level_comments)= 64
+len(not_self_replies)= 289
+len(valid_replies)= 247
+========================================
+valid_comments= 311
+========================================
+```
