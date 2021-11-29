@@ -174,14 +174,14 @@ while True:
         print('len(comments_without_replies)=',len(comments_without_replies))
 
         #Extra credit task: Upvote every comment that contains biden
-        submission.comments.replace_more(limit= None)
-        comment_content=[]
-        for comment in all_comments:
-            comment_content.append(str(comment.body))
+        # submission.comments.replace_more(limit= None)
+        # comment_content=[]
+        # for comment in all_comments:
+        #     comment_content.append(str(comment.body))
         
-        for a_comment in comment_content:
-            if 'Biden' in a_comment:
-                comment.upvote()
+        # for a_comment in comment_content:
+        #     if 'Biden' in a_comment:
+        #         comment.upvote()
 
         # FIXME (task 4): randomly select a comment from the comments_without_replies list,
         # and reply to that comment
