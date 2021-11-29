@@ -20,3 +20,12 @@ len(valid_replies)= 247
 valid_comments= 311
 ========================================
 ```
+
+## Rubric
+1. All tasks on bot.py file (18 points)
+2. Github repository (2 points)
+3. Get at least 100 valid points (2 points)
+4. Extra credit task 6 (2 points)
+5. Extra credit task 7 (2 points)
+
+### Total 26/30
