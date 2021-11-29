@@ -124,7 +124,7 @@ while True:
     # (your bot may have posted comments in other submissions);
     # your bot will behave differently depending on whether it's posted a comment or not
     has_not_commented = len(not_my_comments) == len(all_comments)
-    # print('has_not_commented=', has_not_commented)
+    print('has_not_commented=', has_not_commented)
     if has_not_commented:
         # FIXME (task 2)
         # if you have not made any comment in the thread, then post a top level comment
@@ -133,7 +133,6 @@ while True:
         # use the generate_comment() function to create the text,
         # and the .reply() function to post it to reddit;
         # a top level comment is created when you reply to a post instead of a message
-        
         submission.reply(generate_comment())
     
         
@@ -181,7 +180,7 @@ while True:
             comment_content.append(str(comment.body))
         
         for a_comment in comment_content:
-            if 'Biden' in comment_content:
+            if 'Biden' in a_comment:
                 comment.upvote()
 
         # FIXME (task 4): randomly select a comment from the comments_without_replies list,
@@ -192,12 +191,16 @@ while True:
         # and the .reply() function to post it to reddit;
         # these will not be top-level comments;
         # so they will not be replies to a post but replies to a message
-        
+    try:
         comment = random.choice(comments_without_replies)
         try:
             comment.reply(generate_comment())
         except praw.exceptions.APIException:
             print('deleted comment, cannot reply')
+            pass
+    except IndexError:
+        print('all mine')
+        pass
         
         
     # FIXME (task 5): select a new submission for the next iteration;
