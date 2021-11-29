@@ -173,7 +173,7 @@ while True:
         # and so you will have to be careful to check that this code is in fact working correctly
         print('len(comments_without_replies)=',len(comments_without_replies))
 
-        #Extra task: Upvote every comment that contains biden
+        #Extra credit task: Upvote every comment that contains biden
         submission.comments.replace_more(limit= None)
         comment_content=[]
         for comment in all_comments:
