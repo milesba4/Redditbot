@@ -28,4 +28,4 @@ valid_comments= 311
 4. Extra credit task 6 (2 points)
 5. Extra credit task 7 (2 points)
 
-### Total 26/30
+### Total 26 points
